@@ -6,11 +6,11 @@ The idea of this project is to code trajectories and to extract an image of the 
 
 ## Plan de vol
 
-* acceleration
+* <span style='color:red'>acceleration</span>
 * rotation
-* ascension
+* **ascension**
 * mise en palier
-* stabilisation
+* *stabilisation*
 * mise en position
 * plan de vol circulaire autour de coordonnées de décollage
 * mise en position
@@ -18,3 +18,9 @@ The idea of this project is to code trajectories and to extract an image of the 
 * approche
 * arrondi
 * touch down
+
+## Objectif
+
+...
+
+![flying_wing](img/FlyingWing.jpg)
