@@ -26,6 +26,25 @@ The idea of this project is to code trajectories and to extract an image of the 
 
 ![flying_wing](img/FlyingWing.jpg)
 
+The Wing can :
+* accelerate / decelerate
+* go up / go down
+* rotate right /rotate left
+* open / close landing gear
+
+
+#### Step one :
+Compute real airplane trajectory from point S(start point) to point E (end point)
+Plane moves in a 2D space with Longitude and Latitude.
+
+In a second time we can eventually have a third dimension which is the altitude.
+
+#### Step two:
+Convert the trajectory into commands.
+
+
+
+
 
 ## State of the Art :
 
