@@ -1,0 +1,9 @@
+pip install dubins
+
+or
+
+pip install git+git://github.com/AndrewWalker/pydubins.git
+
+
+
+https://github.com/AndrewWalker/pydubins
