@@ -9,6 +9,10 @@ author Atsushi Sakai(@Atsushi_twi)
 import math
 import numpy as np
 import matplotlib.pyplot as plt
+import imageio
+import pylab
+import os
+
 
 show_animation = True
 
@@ -35,7 +39,6 @@ def LSL(alpha, beta, d):
     t = mod2pi(-alpha + tmp1)
     p = math.sqrt(p_squared)
     q = mod2pi(beta - tmp1)
-    #  print(np.rad2deg(t), p, np.rad2deg(q))
 
     return t, p, q, mode
 
@@ -192,7 +195,7 @@ def dubins_path_planning(sx, sy, syaw, ex, ey, eyaw, c):
         ey y position of end point [m]
         eyaw yaw angle of end point [rad]
         c curvature [1/m]
-        
+
     output:
         px
         py
@@ -288,27 +291,21 @@ def plot_arrow(x, y, yaw, length=1.0, width=0.5, fc="r", ec="k"):
 
 def main():
     print("Dubins path planner sample start!!")
-
     start_x = 1.0  # [m]
     start_y = 1.0  # [m]
     start_yaw = np.deg2rad(45.0)  # [rad]
-
     end_x = -3.0  # [m]
     end_y = -3.0  # [m]
     end_yaw = np.deg2rad(-45.0)  # [rad]
-
     curvature = 1.0
 
-
-
     px, py, pyaw, mode, clen = dubins_path_planning(start_x, start_y, start_yaw,
-
                                                     end_x, end_y, end_yaw, curvature)
-
 
 
     if show_animation:
         plt.plot(px, py, label="final course " + "".join(mode))
+
 
 
 
@@ -335,7 +332,7 @@ def main():
 
 
 def test():
-
+    
     NTEST = 5
 
     for i in range(NTEST):
@@ -359,8 +356,7 @@ def test():
             #  plotting
             plot_arrow(start_x, start_y, start_yaw)
             plot_arrow(end_x, end_y, end_yaw)
-
-
+                    
 
             plt.legend()
             plt.grid(True)
@@ -369,11 +365,12 @@ def test():
             plt.ylim(-10, 10)
             plt.pause(1.0)
 
+            pylab.savefig('picture'+str(i))
 
 
+    os.system('convert -delay 100 *.png animation.gif')
     print("Test done")
-
-
+    
 
 
 
