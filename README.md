@@ -53,3 +53,4 @@ The shortest curve that connects two points in the two-dimensional Euclidean pla
 
 * A* :
 Used in pathfinding and graph traversal, which is the process of finding a path between multiple points, called “nodes”. It aims to find a path to the given goal node having the smallest cost (least distance travelled, shortest time, etc.).
+It extends Dijkstra's algorithm and achieves better performance by using heuristics.
