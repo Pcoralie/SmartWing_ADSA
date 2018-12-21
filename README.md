@@ -57,4 +57,8 @@ It extends Dijkstra's algorithm and achieves better performance by using heurist
 
 Plane moves in 3D space with Longitude, Latitude and altitude.
 
-For this step we use the code :  [dubinsAirplane](https://github.com/unr-arl/DubinsAirplane "dubinsAirplane") from Dr. Kostas Alexis.
+For this step we use the code :  [dubinsAirplane](https://github.com/unr-arl/DubinsAirplane "dubinsAirplane").
+
+Dubins airplane is an extension of the classical Dubins car model for the 3D case of an ariplane. In dubins airplane paths there are the altitude component.  Based on the difference between the altitude of the initial and final configurations, Dubins airplane paths can be classified as low, medium, or high altitude gain.
+
+To have more information, the website of Kostas Alexis : [Kostas Alexis](http://www.kostasalexis.com/dubins-airplane.html "dubins-airplane-kostas")
