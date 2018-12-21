@@ -33,16 +33,14 @@ The Wing can :
 * open / close landing gear
 
 
-#### Step one :
+#### Step 1 :
 Compute real airplane trajectory from point S(start point) to point E (end point)
 Plane moves in a 2D space with Longitude and Latitude.
 
 In a second time we can eventually have a third dimension which is the altitude.
 
-#### Step two:
+#### Step 2:
 Convert the trajectory into commands.
-
-
 
 
 
@@ -54,3 +52,9 @@ The shortest curve that connects two points in the two-dimensional Euclidean pla
 * A* :
 Used in pathfinding and graph traversal, which is the process of finding a path between multiple points, called “nodes”. It aims to find a path to the given goal node having the smallest cost (least distance travelled, shortest time, etc.).
 It extends Dijkstra's algorithm and achieves better performance by using heuristics.
+
+## Current Process
+
+Plane moves in 3D space with Longitude, Latitude and altitude.
+
+For this step we use the code :  [dubinsAirplane](https://github.com/unr-arl/DubinsAirplane "dubinsAirplane") from Dr. Kostas Alexis.
