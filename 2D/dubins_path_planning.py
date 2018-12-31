@@ -325,14 +325,16 @@ def main():
         plt.legend()
         plt.grid(True)
         plt.axis("equal")
+        pylab.savefig('picture')
         plt.show()
 
 
 
 
 
+
 def test():
-    
+
     NTEST = 5
 
     for i in range(NTEST):
@@ -356,7 +358,7 @@ def test():
             #  plotting
             plot_arrow(start_x, start_y, start_yaw)
             plot_arrow(end_x, end_y, end_yaw)
-                    
+
 
             plt.legend()
             plt.grid(True)
@@ -370,7 +372,7 @@ def test():
 
     os.system('convert -delay 100 *.png animation.gif')
     print("Test done")
-    
+
 
 
 
